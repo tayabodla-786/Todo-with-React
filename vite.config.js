@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/Todo-with-React/",
   plugins: [react(), tailwindcss()],
+  base: "/Todo-with-React/",
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 })
